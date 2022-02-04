@@ -1,8 +1,7 @@
 # In-class-exercise repo
 
-This repository contains an `.Rmd` notebook with starter code to facilitate following the material covered in class. You are expected to:
-* work on the notebook during the class, and add your own notes and experiments with code
-* create a GitHub-flavored `.md` file and `push` it along with your annotated `.Rmd` file at the end of the class
+This repository contains an `.R` script with starter code to facilitate following the material covered in class. You are expected to:
+* work on the script during the class, and add your own notes and experiments
 
 #### Follow the steps below:
 
@@ -16,22 +15,24 @@ $ cd <your selected location here>
 $ git clone <paste-your-url>.git
 ```
 
-3. follow the class using the `.Rmd` notebook included in this repo, and add your notes where appropriate
+3. move inside the cloned repo
+```
+$ cd <newly-created-repo-folder>
+```
+4. follow the class using the `.R` script included in this repo, and add your notes/experiments where appropriate
 
-4. at the end of the class, `knit` your `.Rmd` notebook to create a GitHub-flavored `.md` file, and place this file in a new directory called `notebooks\` so that the final repo follows the below structure:
+5. at the end of the class, save your `.R` script so that the final repo follows the below structure:
 ```
 repo\
  | -- .gitignore
  | -- README.md
  | -- src\
- 		| -- in-class-exercise-notebook.Rmd
- | -- notebooks\
- 		| -- in-class-exercise-notebook.md
+ 		| -- <script-name>.R
 ```
 
 4. at the end of the class, take the usual steps to `push` these files back to the repo
 ```
-$ git add <your-new-files-here>
+$ git add <files-you-worked-on>
 $ git commit -m "<your-message-here>"
 $ git push -u origin main
 ```
